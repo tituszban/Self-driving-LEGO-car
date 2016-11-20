@@ -9,3 +9,5 @@ Using the database built from the images two neuro-network was trained in Octave
 For demostration on driving and image processing see: https://youtu.be/kZt32APp5ug
 
 One of the interesting parts of this project was the simultaneous using of three different programming languages. The car interface took the inputs from a file, that C# programs can edit without probelms, using mutexes, but not Pyton programs. So in order to keep the integrity of the files, the Python logger and neuro-network controller was given a .NET library, also made by me, to be able to use mutexes. I also had to use a Python framework in order to run the neuro-network with the real time values in octave. I managed all these connection with relativly low latency, as the bottleneck in update speed was the bluetooth communication.
+
+#WARNING: some code may be missing, due to moving of files through multiple computers
